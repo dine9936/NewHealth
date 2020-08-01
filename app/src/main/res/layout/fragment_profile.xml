@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.ProfileFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+   >
+
+    <RelativeLayout
+
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <FrameLayout
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/profile_layout"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                android:id="@+id/image_view_profile"
+                android:layout_width="100dp"
+                app:civ_circle_background_color="@android:color/white"
+                android:layout_height="100dp"
+                android:src="@drawable/personicon"
+                />
+            <ImageButton
+                android:elevation="4dp"
+                android:id="@+id/add_image_button"
+                android:background="@drawable/circle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_photo_camera_24"
+                android:layout_gravity="right|bottom"/>
+        </FrameLayout>
+
+        <LinearLayout
+
+            android:gravity="center"
+            android:layout_below="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_text"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Doe"
+                android:textColor="#656565"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/phone_text"
+                android:textColor="#656565"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91 8840723127"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/layout_location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_region"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_edit_text"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:hint="REGION"
+                    android:id="@+id/text_view_region"
+                    android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    android:gravity="start|center"
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/ic_location"
+                    android:drawablePadding="8dp"
+                    android:textColorHint="#8B8B8B"
+                    android:textSize="14sp" />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_region2"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ll_region"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_edit_text"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/text_view_region2"
+                    android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    android:hint="NEAREST LOCATION / AREA"
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_location"
+                    android:drawablePadding="8dp"
+                    android:gravity="start|center"
+                    android:textColorHint="#8B8B8B"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

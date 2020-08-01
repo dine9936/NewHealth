@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "512747440557",
+    "firebase_url": "https://newhealth-9d31d.firebaseio.com",
+    "project_id": "newhealth-9d31d",
+    "storage_bucket": "newhealth-9d31d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512747440557:android:e729e3590d22db3a9b3924",
+        "android_client_info": {
+          "package_name": "com.rama.newhealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512747440557-65siqb8ulkgbla51jo6j9vnooupv6s3k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9Da_6aIoNnorEOZaK1-qZ7Sv9R8DyPpg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512747440557-65siqb8ulkgbla51jo6j9vnooupv6s3k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
